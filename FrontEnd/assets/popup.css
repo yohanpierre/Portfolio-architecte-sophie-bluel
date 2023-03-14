@@ -1,0 +1,188 @@
+
+#popup{
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    text-align: flex;
+    position: absolute;
+    min-width: 630px;
+    min-height: 731px;
+    max-width: 630px;
+    max-height: 731px;
+    left: 275px;
+    top: 500px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px white solid;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#popup p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+}
+#pop{
+    display: none;
+}
+#close{
+    display: block;
+    position: absolute;
+    left: 580px;
+    top: 30px;
+}
+.xs{
+    max-width: 78.12px;
+   max-height: 104.08px;
+   font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #000000;
+
+}
+#content{
+    max-width: 400px;
+	display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#bar{
+    margin: auto;
+    min-width: 420px;
+    max-width: 420px;
+height: 0px;
+border: 1px solid #B3B3B3;
+}
+#foot{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#foot button{
+    font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	margin : 2em auto ;
+	min-width: 237px;
+    min-height: 36px;
+	text-align: center;
+	border-radius: 60px ;
+}
+#nform{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+	margin-top:30px;
+}
+#nform input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+    max-width: 420px;
+    max-height: 51px;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#upload{
+	font-family: 'Syne';
+	font-weight: 700;
+    min-width: 420px;
+    min-height: 169px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: #E8F1F7;
+}
+.label-file {
+    cursor: pointer;
+    color: #00b1ca;
+    font-weight: bold;
+}
+.label-file:hover {
+    color: #25a5c4;
+}
+#drop button{
+    font-family: 'Syne';
+	font-weight: 700;
+	color: #306685;
+    background-color: #CBD6DC;
+	min-width: 237px;
+    min-height: 36px;
+    max-width: 237px;
+    max-height: 36px;
+    border: none;
+	text-align: center;
+	border-radius: 50px ;
+}
+#drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+#drop img{
+    min-width: 58px;
+    min-height: 58px;
+    max-width: 58px;
+    max-height: 58px;
+    color: #B9C5CC;
+    display: block;
+    margin: auto;
+}
+
+h6{
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+color: #444444;
+}
+.input-file {
+    display: none;
+}
+select{
+width: 420px;
+height: 51px;
+background: #FFFFFF;
+border: none;
+box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+option{
+    color: black;
+}
+#nform label {
+	margin: 2em 0 1em 0;
+}
+#green{
+    background-color: #1D6154;
+}
+#grey{
+    background-color: #A7A7A7;
+    display: none;
+}
+#foot p{
+  width: 230px;
+    height: 17px;
+     font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #D65353;
+}
+#obj{
+    display: none;
+    margin: auto;
+    max-width: 129px;
+    max-height: 193px;
+}

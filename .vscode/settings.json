@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Portfolio-architecte-sophie-bluel}/Backend/database.sqlite",
+            "name": "portfolio"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
