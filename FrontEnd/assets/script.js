@@ -84,6 +84,18 @@ const userId= getCookie('userId')
 
  //Requète http GET vers  l'API works  et appel de la méthode  addElement
 async function get() {
+  await fetch('http://localhost:5678/api/categories', {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+.then((response) => response.json()) 
+.then((result) => {
+  document.getElementById('o').innerText = result[0].name
+  document.getElementById('a').innerText = result[1].name
+  document.getElementById('h').innerText = result[2].name
+})
   const response = await fetch('http://localhost:5678/api/works')
   const posts = await response.json()
   for (const post of posts) {
@@ -95,8 +107,7 @@ async function get() {
    work.addContent()
   }
 }
-const all =  document.getElementById('all')
-all.addEventListener("click", (e) => {
+document.getElementById('all').addEventListener("click", (e) => {
   for (const p of document.getElementsByClassName('1')) {
     document.getElementById(p.id).style.display = "block";
   }
@@ -107,7 +118,7 @@ all.addEventListener("click", (e) => {
     document.getElementById(p.id).style.display = "block";
   }
 })
-function o() {
+document.getElementById('o').addEventListener("click", (e) => {
   for (const p of document.getElementsByClassName('1')) {
     document.getElementById(p.id).style.display = "block";
   }
@@ -117,8 +128,8 @@ function o() {
   for (const p of document.getElementsByClassName('2')) {
     document.getElementById(p.id).style.display = "none";
   }
-}
-function a() {
+})
+document.getElementById('a').addEventListener("click", (e) => {
   for (const p of document.getElementsByClassName('1')) {
     document.getElementById(p.id).style.display = "none";
   }
@@ -128,8 +139,8 @@ function a() {
   for (const p of document.getElementsByClassName('2')) {
     document.getElementById(p.id).style.display = "block";
   }
-}
-function h() {
+})
+document.getElementById('h').addEventListener("click", (e) => {
   for (const p of document.getElementsByClassName('1')) {
     document.getElementById(p.id).style.display = "none";
   }
@@ -139,7 +150,7 @@ function h() {
   for (const p of document.getElementsByClassName('2')) {
     document.getElementById(p.id).style.display = "none";
   }
-}
+})
 
 //Lancement de la popup lors du clic sur moddifier
 const pop =  document.getElementById('pop')
@@ -237,3 +248,6 @@ remove.addEventListener("click", (e) => {
   console.error("Error:", error);
 });
 }
+//evenement de la popup
+document.getElementById('grey').addEventListener("click", (e) => {validate()})
+document.getElementById('green').addEventListener("click", (e) => {create()})

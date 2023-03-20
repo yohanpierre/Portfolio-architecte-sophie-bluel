@@ -31,5 +31,4 @@ const storage = getStorage(app);
   if (file) {
     reader.readAsDataURL(file)
   }
-
   })
